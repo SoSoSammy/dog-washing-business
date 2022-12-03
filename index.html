@@ -91,16 +91,46 @@
         <div class="container">
             <div class="row">
                 <div class="col-8 d-flex align-items-center">
-                    <p class="my-auto">Join our email newsletter to receive announcements about our latest deals and
-                        events!</p>
+                    <p class="my-auto">Join our email newsletter to receive announcements about our latest deals!</p>
                 </div><!-- col -->
 
-                <div class="col-4">
-                    <a class="btn btn-info d-block" data-toggle="modal" href="#myModal">Click to Join</a>
+                <div class="col-4 my-auto">
+                    <a class="btn btn-info d-block my-auto" data-toggle="modal" href="#myModal">Click to Join</a>
                 </div><!-- col -->
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- end #newsletter-->
+
+
+
+    <!-- ************************************* Modal *************************************** -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header bg-dark text-center">
+                    <h5 class="modal-title text-white" id="modalLabel">Subscribe to receive
+                        announcements!</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button><!-- close -->
+                </div><!-- modal-header -->
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        </div><!-- form-group -->
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div><!-- form-group -->
+
+                        <button type="submit" class="btn btn-info">Subscribe</button>
+                    </form>
+                </div><!-- modal-body -->
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal fade -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
