@@ -1,0 +1,10 @@
+#hero-section {
+    background-image: url(images/autri-taheri-dog-washing-unsplash.jpg);
+    /* Photo by <a href="https://unsplash.com/@ataheri?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Autri Taheri</a> on <a href="https://unsplash.com/s/photos/dog-bath?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    padding: 100px;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
