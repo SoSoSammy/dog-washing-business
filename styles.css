@@ -4,13 +4,13 @@
     padding: 100px;
     height: 500px;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 75% 30%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 @media screen and (max-width: 600px) {
     #hero-section {
-        background-position: top;
+        background-image: url(images/autri-taheri-dog-washing-sm-unsplash.jpeg);
     }
 }
