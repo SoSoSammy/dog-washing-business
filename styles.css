@@ -4,7 +4,8 @@
     padding: 100px;
     height: 500px;
     background-attachment: fixed;
-    background-position: 75% 30%;
+    /* background-position: 75% 30%; */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
