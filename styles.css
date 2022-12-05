@@ -9,6 +9,10 @@
     background-size: cover;
 }
 
+#services .card.basic-wash {
+    padding-bottom: 95px;
+}
+
 @media screen and (max-width: 768px) {
     #hero-section {
         display: none;
