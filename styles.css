@@ -4,7 +4,13 @@
     padding: 100px;
     height: 500px;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 75% 30%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    #hero-section {
+        display: none;
+    }
 }
