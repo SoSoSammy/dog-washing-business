@@ -1,0 +1,75 @@
+/* Shared */
+main {
+    background-color: #F5F5F5;
+    padding: 30px 0;
+}
+
+.large-heading {
+    padding: 20px 0;
+    line-height: 150%;
+}
+
+.container>p {
+    padding-bottom: 10px;
+}
+
+.appointment-details .button {
+    display: inline-block;
+    height: 50px;
+}
+
+.hr-heading {
+    font-weight: 700;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone,
+.name-on-card,
+.card-number,
+.card-expiration,
+.card-security-code,
+.billing-zip-code {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+
+/* Services Appointments */
+iframe {
+    width: 80vw;
+    height: 70vh;
+    margin: 20px 0 20px 10px;
+}
+
+.product-info-and-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Services Next */
+.fill-out-details form {
+    margin: 20px 0;
+}
+
+.fill-out-details .form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    height: 30px;
+}
+
+.enter-in-information-container .product-info,
+.total {
+    margin: 20px 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
