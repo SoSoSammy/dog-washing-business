@@ -1,260 +1,586 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samantha Vazquez">
+    <meta name="keywords"
+        content="dog washing, dog wash, dogs, dog, pet care, dog grooming, floofer, floofer's dog washing">
+    <meta name="description" content="Welcome to Floofer's Dog Washing! We offer dog washes to pet parents at an affordable price! All our products that we use are organic and sustainably 
+    sourced. Learn more about our services offered and the products we use.">
+    <title>Home | Floofer's Dog Washing</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 
     <!-- Favicon -->
     <link rel="icon" href="images/floofers-dog-washing-favicon.png">
 
-    <title>Floofer's Dog Washing</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/774cd7acea.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- *********************************** Nav Bar ***************************** -->
-    <nav class="navbar bg-light navbar-light navbar-expand-sm">
-        <div class="container">
-            <img class="navbar-brand w-25 d-none d-lg-block"
-                src="images/floofers-dog-washing-low-resolution-logo-black-on-transparent-background.png"
-                alt="Floofer's dog washing logo">
+    <!-- ********************** Navigation ************************  -->
 
-            <img class="navbar-brand w-50 d-lg-none"
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span><!-- end .navbar-toggle #js-navbar-toggle -->
+
+        <a href="#" class="logo"><img
                 src="images/floofers-dog-washing-low-resolution-logo-black-on-transparent-background-no-slogan.png"
-                alt="Floofer's dog washing logo">
+                alt="Floofer's Dog Washing Logo"></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#togglerNav"
-                aria-controls="togglerNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button><!-- navbar-toggler -->
-            <div class="collapse navbar-collapse" id="togglerNav">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#">Home</a>
-                    <a class="nav-item nav-link" href="#services">Our Services</a>
-                    <a class="nav-item nav-link" href="#about-us">About Us</a>
-                    <a class="nav-item nav-link" href="#contact">Contact</a>
-                </div><!-- navbar-nav -->
-            </div><!-- collapse -->
-        </div><!-- container -->
-    </nav><!-- navbar -->
+        <ul class="main-nav" id="js-menu">
+            <div class="left-section">
+                <li><a href="index.html" class="nav-links nav-link-active">Home</a></li>
+                <li><a href="services.html" class="nav-links">Services</a></li>
+                <li><a href="appointments.html" class="nav-links">Appointments</a></li>
+                <li><a href="warranty.html" class="nav-links">Warranty</a></li>
+                <li><a href="about.html" class="nav-links">About</a></li>
+                <li><a href="contact.html" class="nav-links">Contact</a></li>
+            </div><!-- end .left-section -->
 
-    <!-- ************************ Hero Section *******************************  -->
-    <section id="hero-section"></section><!-- end #hero-section -->
+            <div class="right-section">
+                <li><a href="login.html" class="nav-links nav-button btn-left">Login</a></li>
+                <li><a href="signup.html" class="nav-links nav-button btn-right">Sign Up</a></li>
+            </div><!-- end .right-section -->
 
-    <img class="w-100 img-fluid d-md-none" src="images/autri-taheri-dog-washing-sm-unsplash.jpeg"
-        alt="A person washing a golden retriever">
-    <!-- ************************************* Newsletter *********************************** -->
-    <section id="newsletter" class="bg-dark text-white p-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-8 d-flex align-items-center">
-                    <p class="my-auto">Join our email newsletter to receive announcements about our latest deals!</p>
-                </div><!-- col -->
+        </ul><!-- end .main-nav #js-menu -->
+    </nav><!-- end .navbar -->
 
-                <div class="col-4 my-auto">
-                    <a class="btn btn-info d-block my-auto" data-toggle="modal" href="#myModal">Click to Join</a>
-                </div><!-- col -->
-            </div><!-- row -->
-        </div><!-- container -->
-    </section><!-- end #newsletter-->
+    <main>
+        <!-- ********************** Hero Section ************************  -->
 
-    <!-- ************************ Services ************************************ -->
-    <section id="services">
-        <div class="container">
-            <h2 class="text-center pt-4">Our Services</h2>
-            <div class="row p-4 row-cols-1 row-cols-md-3">
-                <div class="col">
-                    <div class="card mb-4">
-                        <img class="card-img rounded-0 img-fluid" src="images/hayffield-l-dog-grooming-unsplash.jpg"
-                            alt="A person pampering a dog">
-                        <!-- Photo by <a href="https://unsplash.com/@hayffield?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hayffield L</a> on <a href="https://unsplash.com/s/photos/dog-bath?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        -->
-                        <div class="card-body">
-                            <h3 class="card-title h4">Deluxe Spa Day<span class="badge badge-success ml-3">$19.99</span>
-                            </h3>
-                            <p class="card-text">We will treat your dog with the loyalty it deserves, as we give your
-                                dog some premium snacks such as homemade treats. We
-                                will give your dog a massage and wash your dog with oatmeal soaps to make your dog smell
-                                good and have a soft coat. We then will give your dog a nail
-                                clipping and groom your dog. For a prize for
-                                your dog's way home we will be giving your dog a bag of treats with a choice of toy to
-                                take home!
+        <section class="hero-section-desktop">
+            <div class="hero-section-words">
+                <!-- <h1>Dog Washing</h1>
+                <h2>Affordable & Environmentally Friendly</h2> -->
+            </div><!-- end .hero-section-words -->
+        </section><!-- end .hero-section-desktop -->
 
-                            </p>
-                        </div><!-- card-body -->
-                    </div><!-- card -->
-                </div><!-- col -->
+        <section class="hero-section-mobile">
+            <img src="images/autri-taheri-dog-washing-sm-unsplash.jpeg">
+        </section><!-- end .hero-section-mobile -->
 
-                <div class="col">
-                    <div class="card mb-4 pb-4">
-                        <img class="card-img rounded-0 img-fluid"
-                            src="images/j-balla-photography-dog-hair-brushing-unsplash.jpg"
-                            alt="Two people brushing and blowdrying a dog's hair">
-                        <!-- Photo by <a href="https://unsplash.com/@jballa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">J. Balla Photography</a> on <a href="https://unsplash.com/s/photos/dog-grooming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        -->
-                        <div class="card-body">
-                            <h3 class="card-title h4">Wash & Grooming<span class="badge badge-success ml-3">$9.99</span>
-                            </h3>
-                            <p class="card-text">The wash & grooming is perfect for when your dog just gets dirty and
-                                sometimes you just want to treat your dog out, we give your dog a homemade treat and we
-                                start out with a basic wash with oatmeal soap. Then we groom your dog depending on your
-                                dog coat with these brushes: out slicker brushes, rakes, bristle, and pin brush. We then
-                                just decorate your dog’s coat!
+        <!-- ********************** Newsletter ************************  -->
 
-                            </p>
-                        </div><!-- card-body -->
-                    </div><!-- card -->
-                </div><!-- col -->
+        <div class="newsletter-banner">
+            <p>Join our email newsletter to receive announcements about our latest deals!</p>
+            <a href="#" class="button newsletter-btn trigger" data-modal="email-subscription-modal">Click to Join</a>
+        </div><!-- end .newsletter-banner -->
 
-                <div class="col">
-                    <div class="card mb-4 basic-wash">
-                        <img class="card-img rounded-0 img-fluid" src="images/benjamin-lehman-dog-washing-unsplash.jpg"
-                            alt="A person washing a dog">
-                        <!-- Photo by <a href="https://unsplash.com/@benjaminlehman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">benjamin lehman</a> on <a href="https://unsplash.com/s/photos/dog-washing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        -->
-                        <div class="card-body">
-                            <h3 class="card-title h4">Basic Wash<span class="badge badge-success ml-3">$4.99</span>
-                            </h3>
-                            <p class="card-text">The basic wash is just as loving as the Deluxe Spa, we will give your
-                                dog a nice oatmeal soap body wash, as well as a massage. Next we will blow dry your
-                                dog's coat. Finally we will brush their fur coat and make sure they are nice and clean.
+        <!-- Modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close-button">&times;</span>
 
-                            </p>
-                        </div><!-- card-body -->
-                    </div><!-- card -->
-                </div><!-- col -->
-            </div><!-- row -->
-        </div><!-- container -->
-    </section><!-- end #services -->
-
-    <!-- ******************************** About Us ********************************************* -->
-    <section id="about-us" class="bg-light">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 pt-4 pb-5">
-                <div class="col col-md-6 col-lg-4 d-flex align-items-center">
-                    <img class="w-100 mx-auto d-block" src="images/chewy-people-and-dog-unsplash.jpg"
-                        alt="Two people smiling with their dog">
-                    <!-- Photo by <a href="https://unsplash.com/@chewy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chewy</a> on <a href="https://unsplash.com/s/photos/person-and-dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                    -->
-                </div><!-- col -->
-
-                <div class="col col-md-6 col-lg-8">
-                    <h2 class="text-center pt-4 pb-3">About Us</h2>
-                    <p>We are a couple who love dogs and want to share our appreciation of them. We started this
-                        business in the beginning of 2022 in hopes to help dog owners like us and make sure they are
-                        being washed with high quality soaps that are sustainably sourced. We are dedicated to giving
-                        your dogs a wonderful dog washing experience and making sure that they end up clean and happy.
-
-                    </p>
-                </div><!-- col -->
-            </div><!-- row -->
-        </div><!-- container -->
-    </section><!-- end #about-us -->
-
-    <!-- *************************** Contact Us ************************************** -->
-    <section id="contact" class="bg-dark text-white p-5">
-        <div class="container">
-            <p class="lead">Do you have any questions or business inquiries? Feel free to get in touch with us!</p>
-
-            <div class="row">
-                <div class="col col-md-7">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <label class="form-label" for="name">Name</label>
-                                <input class="form-control" type="text" id="name" name="name">
-                            </div><!-- form-group -->
-
-                            <div class="form-group col">
-                                <label class="form-label" for="email">Email</label>
-                                <input class="form-control" type="email" id="email" name="email">
-                            </div><!-- form-group -->
-                        </div><!-- form-row -->
-
-                        <div class="form-group">
-                            <label class="form-label" for="message">Your Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="4"></textarea>
-                        </div><!-- form-group -->
-
-                        <button class="btn btn-info" type="submit">Send us a message</button>
-                    </form>
-                </div><!-- col -->
-
-                <div class="col col-md-5 p-5">
-                    <h2>Contact Information</h2>
-                    <address>
-                        1234 Lake View St.<br>
-                        Mountview, UT 84291<br>
-                        208-777-8845<br>
-                        info@floofersdogwashing.com<br>
-                    </address>
-                </div>
-            </div><!-- row -->
-        </div><!-- container -->
-    </section><!-- end #contact -->
-
-    <!-- ************************************* Footer *********************************** -->
-    <footer class="p-4">
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <div>
-                    Coded by <a class="text-dark" href="https://github.com/SoSoSammy" target="_blank">SoSoSammy</a>
-                </div>
-
-                <div>
-                    Photos from <a class="text-dark" href="https://unsplash.com" target="_blank">Unsplash</a>
-                </div>
-            </div><!-- flex -->
-        </div><!-- container -->
-    </footer>
-
-    <!-- ************************************* Modal *************************************** -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content text-center">
-                <div class="modal-header bg-dark text-center">
-                    <h5 class="modal-title text-white" id="modalLabel">Subscribe to receive
-                        announcements!</h5>
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button><!-- close -->
-                </div><!-- modal-header -->
+                    <h2>Subscribe to receive announcements!</h2>
+                </div><!-- end .modal-header -->
 
                 <div class="modal-body">
                     <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-                        </div><!-- form-group -->
-
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                        </div><!-- form-group -->
-
-                        <button type="submit" class="btn btn-info">Subscribe</button>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                        <button type="submit" class="button subscribe-button">Subscribe</button>
                     </form>
-                </div><!-- modal-body -->
-            </div><!-- modal-content -->
-        </div><!-- modal-dialog -->
-    </div><!-- modal fade -->
+                </div><!-- end .modal-body -->
+            </div><!-- end .modal-content -->
+        </div><!-- end .modal -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        <!-- ********************** Business Overview Cards ************************  -->
+
+        <section class="business-overview">
+            <div class="container">
+                <div class="services-card card">
+                    <img src="images/undraw_good_doggy_re_eet7.svg" class="undraw-icon" alt="dog">
+                    <h2>Services</h2>
+                    <p>We offer many types of dog washes, such as the Basic Wash, Wash & Grooming, and Deluxe Spa Day.
+                        In all of our dog washes we will give your dog a nice massage. All of our shampoos are organic
+                        and sustainably sourced, so you can ensure that your dog is in good hands.</p>
+                    <a class="link" href="services.html">View Our Services We Offer</a>
+                </div><!-- end .services-card card -->
+
+                <div class="appointments-card card">
+                    <img src="images/undraw_online_calendar_re_wk3t.svg" class="undraw-icon" alt="calendar">
+                    <h2>Appointments</h2>
+                    <p>We have several openings for a dog washing appointment. We are open Monday through Friday, from
+                        11:00am to 4:00pm. The length of our appointments vary by dog washing type, but they are
+                        typically an hour long.</p>
+                    <a class="link" href="appointments.html">Schedule an Appointment</a>
+                </div><!-- end .appointments-card card -->
+
+                <div class="warranty-card card ">
+                    <img src="images/undraw_file_searching_re_3evy.svg" class="undraw-icon" alt="documents">
+                    <h2>Warranty</h2>
+                    <p>We are committed to making sure that you and your dog are satisfied with our services. We want to
+                        make sure
+                        that your dog has the best experience possible. If you are
+                        not satisfied, we will wash your dog again, free of charge until you are.</p>
+                    <a class="link" href="warranty.html">See our Warranty</a>
+                </div><!-- end .warranty-card card -->
+            </div><!-- end .container -->
+        </section><!-- end .business-overview -->
+
+        <!-- ********************** About Us ************************  -->
+
+        <section class="about-us">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a group of students who love dogs and want to share our appreciation of them. We started this
+                    business in the beginning of 2022 in hopes to help dog owners like us and make sure they are being
+                    washed with high quality soaps that are sustainably sourced. We are dedicated to giving your dogs a
+                    wonderful dog washing experience and making sure that they end up clean and happy.</p>
+                <a class="button" href="about.html">Learn More</a>
+            </div><!-- end .container -->
+        </section><!-- end .about-us -->
+
+        <!-- ********************** Instagram ************************  -->
+
+        <section class="instagram">
+            <div class="container">
+                <h2 class="large-heading">Check out our Instagram</h2>
+
+                <div class="instagram-posts">
+                    <div class="instagram-post-1 instagram-post">
+                        <blockquote class="instagram-media" data-instgrm-captioned
+                            data-instgrm-permalink="https://www.instagram.com/p/CpazbokpzHy/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CpazbokpzHy/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CpazbokpzHy/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Floofer&#39;s Dog Washing Company
+                                        (@floofersdogwashing)</a></p>
+                            </div>
+                        </blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div><!-- end .instagram-post-1 -->
+
+                    <div class="instagram-post-2 instagram-post">
+                        <blockquote class="instagram-media" data-instgrm-captioned
+                            data-instgrm-permalink="https://www.instagram.com/p/CnIGfPbrFyJ/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CnIGfPbrFyJ/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CnIGfPbrFyJ/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Power of Positivity (@powerofpositivity)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div><!-- end .instagram-post-2 -->
+
+                    <div class="instagram-post-3 instagram-post">
+                        <blockquote class="instagram-media" data-instgrm-captioned
+                            data-instgrm-permalink="https://www.instagram.com/p/CnC87P5rWSv/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <div style="padding:16px;"> <a
+                                    href="https://www.instagram.com/p/CnC87P5rWSv/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram</div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/CnC87P5rWSv/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by Power of Positivity (@powerofpositivity)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div><!-- end .instagram-post-3 -->
+                </div><!-- end .instagram-posts -->
+            </div><!-- end .container -->
+        </section><!-- instagram-posts -->
+
+        <!-- ********************** Testimonials ************************  -->
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="large-heading">See what our customers have to say about us!</h2>
+
+
+                <div class="slide-container">
+                    <div class="indicator">
+                        <span class="indicator-btn btn-active"></span>
+                        <span class="indicator-btn"></span>
+                        <span class="indicator-btn"></span>
+                        <span class="indicator-btn"></span>
+                    </div><!-- end .indicator -->
+                    <div class="testimonial">
+                        <div class="slide-row" id="slide">
+
+                            <div class="slide-col">
+                                <div class="user-img">
+                                    <img src="images/undraw_female_avatar_efig.svg" alt="female icon">
+                                </div><!-- end .user-img -->
+                                <div class="user-text">
+                                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+                                        voluptatum
+                                        praesentium asperiores
+                                        quibusdam nobis fugit deleniti ex sit incidunt fugiat dolores suscipit adipisci
+                                        vitae,
+                                        blanditiis
+                                        voluptate numquam hic ut at!"</p>
+                                    <h3>- Jane Smith</h3>
+                                </div><!-- end .user-text -->
+                            </div><!-- end .slide-col -->
+
+                            <div class="slide-col">
+                                <div class="user-img">
+                                    <img src="images/undraw_pic_profile_re_7g2h.svg" alt="male icon">
+                                </div><!-- end .user-img -->
+                                <div class="user-text">
+                                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+                                        voluptatum
+                                        praesentium asperiores
+                                        quibusdam nobis fugit deleniti ex sit incidunt fugiat dolores suscipit adipisci
+                                        vitae,
+                                        blanditiis
+                                        voluptate numquam hic ut at!"</p>
+                                    <h3>- Oliver Phillips</h3>
+                                </div><!-- end .user-text -->
+                            </div><!-- end .slide-col -->
+
+                            <div class="slide-col">
+                                <div class="user-img">
+                                    <img src="images/undraw_profile_pic_re_iwgo.svg" alt="female icon">
+                                </div><!-- end .user-img -->
+                                <div class="user-text">
+                                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+                                        voluptatum
+                                        praesentium asperiores
+                                        quibusdam nobis fugit deleniti ex sit incidunt fugiat dolores suscipit adipisci
+                                        vitae,
+                                        blanditiis
+                                        voluptate numquam hic ut at!"</p>
+                                    <h3>- Blythe Murphy</h3>
+                                </div><!-- end .user-text -->
+                            </div><!-- end .slide-col -->
+
+                            <div class="slide-col">
+                                <div class="user-img">
+                                    <img src="images/undraw_male_avatar_g98d.svg" alt="male icon">
+                                </div><!-- end .user-img -->
+                                <div class="user-text">
+                                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+                                        voluptatum
+                                        praesentium asperiores
+                                        quibusdam nobis fugit deleniti ex sit incidunt fugiat dolores suscipit adipisci
+                                        vitae,
+                                        blanditiis
+                                        voluptate numquam hic ut at!"</p>
+                                    <h3>- Finn Stewart</h3>
+                                </div><!-- end .user-text -->
+                            </div><!-- end .slide-col -->
+
+                        </div><!-- end .slide-row -->
+                    </div><!-- end .testimonial -->
+                </div><!-- end .slide-container -->
+
+            </div><!-- end .container -->
+        </section><!-- end .testimonials -->
+    </main>
+
+    <!-- ********************** Footer ************************  -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="attribution-left">
+                    <p>Coded by <a class="link2" href="https://github.com/SoSoSammy" target="_blank">SoSoSammy</a></p>
+                </div><!-- end .attribution-left -->
+
+                <div class="footer-logo">
+                    <img src="images/floofers-dog-washing-low-resolution-logo-black-on-transparent-background.png"
+                        alt="floofer's dog washing logo">
+                </div><!-- end .footer-logo -->
+
+                <div class="attribution-right">
+                    <p>Photos from <a class="link2" href="https://unsplash.com" target="_blank">Unsplash</a> and <a
+                            class="link2" href="https://undraw.co/" target="_blank">Undraw</a></p>
+                </div><!-- end .attribution-right -->
+            </div><!-- end .footer-top -->
+
+            <hr>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div><!-- end .social-links -->
+
+                <p class="copyright">
+                    &copy; 2023 Floofer's Dog Washing
+                </p><!-- end .copyright -->
+            </div><!-- end .footer-bottom -->
+        </div><!-- end .container -->
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/email-newsletter-modal.js"></script>
+    <script src="js/testimonial.js"></script>
 </body>
 
 </html>
