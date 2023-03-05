@@ -1,0 +1,75 @@
+var btn = document.getElementsByClassName("indicator-btn");
+var slide = document.getElementById("slide");
+var x = window.matchMedia("(max-width: 768px)");
+
+function testimonialSlider(x) {
+    if (x.matches) {
+        // If the viewport is 768px or less
+        btn[0].onclick = function () {
+            slide.style.transform = "translateX(0px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("btn-active");
+            }
+            this.classList.add("btn-active");
+        }
+        btn[1].onclick = function () {
+            slide.style.transform = "translateX(-270px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("btn-active");
+            }
+            this.classList.add("btn-active");
+        }
+        btn[2].onclick = function () {
+            slide.style.transform = "translateX(-540px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("btn-active");
+            }
+            this.classList.add("btn-active");
+        }
+        btn[3].onclick = function () {
+            slide.style.transform = "translateX(-810px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("btn-active");
+            }
+            this.classList.add("btn-active");
+        }
+        console.log("yo");
+    } else {
+        // If the viewport is great than 768px
+        btn[0].onclick = function () {
+            slide.style.transform = "translateX(0px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("btn-active");
+            }
+            this.classList.add("btn-active");
+        }
+        btn[1].onclick = function () {
+            slide.style.transform = "translateX(-800px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("btn-active");
+            }
+            this.classList.add("btn-active");
+        }
+        btn[2].onclick = function () {
+            slide.style.transform = "translateX(-1600px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("btn-active");
+            }
+            this.classList.add("btn-active");
+        }
+        btn[3].onclick = function () {
+            slide.style.transform = "translateX(-2400px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("btn-active");
+            }
+            this.classList.add("btn-active");
+        }
+    }
+}
+
+testimonialSlider(x); // Call listener function at run time
+x.addListener(testimonialSlider); // Attach listener function on state changes
+
+
+
+console.log("hi");
