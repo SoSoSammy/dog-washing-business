@@ -1,0 +1,22 @@
+main {
+    background-color: #F5F5F5;
+    padding: 50px 0;
+}
+
+.large-heading {
+    padding-bottom: 20px;
+}
+
+.para1 {
+    margin-bottom: 25px;
+}
+
+.about-paragraph {
+    font-size: 20px;
+}
+
+.about-img {
+    width: 80vw;
+    margin: 25px auto 0 auto;
+    display: block;
+}
