@@ -1,0 +1,67 @@
+main {
+    background-color: #F5F5F5;
+    padding: 50px 0;
+}
+
+.large-heading {
+    padding-bottom: 20px;
+}
+
+.sub-heading {
+    text-align: center;
+}
+
+.form-container .sub-heading {
+    padding-bottom: 20px;
+}
+
+.map .sub-heading {
+    padding-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone,
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+form input {
+    height: 30px;
+}
+
+form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .button {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+iframe {
+    width: 80vw;
+    height: 50vh;
+}
+
+.company-details-wrapper {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.company-address {
+    text-align: right;
+}
