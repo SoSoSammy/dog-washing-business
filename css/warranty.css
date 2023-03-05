@@ -1,0 +1,18 @@
+main {
+    background-color: #F5F5F5;
+    padding: 50px 0;
+}
+
+.large-heading {
+    padding-bottom: 20px;
+}
+
+.warranty-subheading {
+    font-size: 24px;
+}
+
+.warranty-img {
+    width: 80vw;
+    margin: 25px auto 0 auto;
+    display: block;
+}
