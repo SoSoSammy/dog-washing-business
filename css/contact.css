@@ -54,14 +54,6 @@ iframe {
     height: 50vh;
 }
 
-.company-details-wrapper {
-    display: flex;
-    margin: 20px 0;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.company-address {
-    text-align: right;
+.business-details {
+    margin: 10px 0;
 }

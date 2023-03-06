@@ -28,11 +28,27 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60%;
 }
 
-.card-body p {
-    margin-bottom: 12px;
+.book-now {
+    background-color: #FF9F48;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    margin: 20px 0;
+}
+
+.features-li {
+    display: flex;
+    align-items: center;
+}
+
+.features-li img {
+    margin-right: 10px;
 }
 
 .card-body .button {

@@ -35,6 +35,8 @@ iframe {
     background-color: white;
     cursor: pointer;
     margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
 }
 
 .select-product .button {

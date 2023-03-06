@@ -10,7 +10,7 @@
         content="dog washing, dog wash, dogs, dog, pet care, dog grooming, floofer, floofer's dog washing">
     <meta name="description" content="Welcome to Floofer's Dog Washing! We offer dog washes to pet parents at an affordable price! All our products that we use are organic and sustainably 
     sourced. Learn more about our services offered and the products we use.">
-    <title>Login | Floofer's Dog Washing</title>
+    <title>Services | Floofer's Dog Washing</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/login-signup.css">
+    <link rel="stylesheet" href="css/services-appointments.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/media-queries.css">
 
@@ -47,7 +47,7 @@
         <ul class="main-nav" id="js-menu">
             <div class="left-section">
                 <li><a href="index.html" class="nav-links">Home</a></li>
-                <li><a href="services.html" class="nav-links">Services</a></li>
+                <li><a href="services.html" class="nav-links nav-link-active">Services</a></li>
                 <li><a href="appointments.html" class="nav-links">Appointments</a></li>
                 <li><a href="warranty.html" class="nav-links">Warranty</a></li>
                 <li><a href="about.html" class="nav-links">About</a></li>
@@ -64,25 +64,28 @@
 
     <main>
         <div class="container">
-            <h1 class="large-heading">Log In</h1>
+            <div class="payment-success-heading">
+                <img src="images/custom-bullet-point.svg" alt="checkmark">
+                <h1 class="large-heading">Payment Successful</h1>
+            </div><!-- end .payement-success-heading -->
 
-            <div class="user-login-container">
-                <i class="fa-solid fa-user"></i>
-                <form>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="johndoe@gmail.com">
+            <div class="payment-details-container">
+                <h2>Payment Details</h2>
+                <div class="payment-details">
+                    <div class="payment-details-row payment-details-row1">
+                        <p>Deluxe Spa</p>
+                        <p>March 9, 2023 at 1:00pm</p>
+                    </div><!-- end .payment-details-row -->
 
-                    <div class="password-label">
-                        <label for="password">Password</label>
-                        <a href="#" class="link">Forgot Password?</a>
-                    </div><!-- end .password-label -->
+                    <div class="payment-details-row">
+                        <p>Total Amount: $70</p>
+                        <p>Paid via credit card</p>
+                    </div><!-- end .payment-details-row -->
+                </div><!-- end .payment-details -->
+                <h2>We'll see you then!</h2>
+            </div><!-- end .payment-details-container -->
 
-                    <input type="password" name="password" placeholder="*************">
-                    <a href="#" class="button">Login</a>
-                </form>
-                <p class="signup-link">If you don't have an account <a href="signup.html" class="link2"> sign up</a>
-                </p>
-            </div><!-- end .user-login-container -->
+
         </div><!-- end .container -->
     </main>
 

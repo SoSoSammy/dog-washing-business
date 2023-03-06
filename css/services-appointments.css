@@ -73,3 +73,29 @@ form input {
     display: flex;
     justify-content: space-between;
 }
+
+/* Success Page */
+.payment-success-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.payment-success-heading img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.payment-details-container h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.payment-details {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 30px;
+}
+
+.payment-details-row1 {
+    margin-bottom: 20px;
+}

@@ -10,7 +10,7 @@
         content="dog washing, dog wash, dogs, dog, pet care, dog grooming, floofer, floofer's dog washing">
     <meta name="description" content="Welcome to Floofer's Dog Washing! We offer dog washes to pet parents at an affordable price! All our products that we use are organic and sustainably 
     sourced. Learn more about our services offered and the products we use.">
-    <title>Login | Floofer's Dog Washing</title>
+    <title>Services | Floofer's Dog Washing</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/login-signup.css">
+    <link rel="stylesheet" href="css/services-appointments.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/media-queries.css">
 
@@ -47,7 +47,7 @@
         <ul class="main-nav" id="js-menu">
             <div class="left-section">
                 <li><a href="index.html" class="nav-links">Home</a></li>
-                <li><a href="services.html" class="nav-links">Services</a></li>
+                <li><a href="services.html" class="nav-links nav-link-active">Services</a></li>
                 <li><a href="appointments.html" class="nav-links">Appointments</a></li>
                 <li><a href="warranty.html" class="nav-links">Warranty</a></li>
                 <li><a href="about.html" class="nav-links">About</a></li>
@@ -64,25 +64,33 @@
 
     <main>
         <div class="container">
-            <h1 class="large-heading">Log In</h1>
+            <a href="services.html" class="link">&laquo; Back</a>
+            <h1 class="large-heading">Scheduling</h1>
+            <p>Schedule an appointment for your dog washing</p>
 
-            <div class="user-login-container">
-                <i class="fa-solid fa-user"></i>
-                <form>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="johndoe@gmail.com">
+            <div class="scheduling-container">
+                <div class="select-date-time">
+                    <p class="hr-heading">Select a Date and Time</p>
+                    <hr>
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?src=9e26f9470af43005e635ec48b81bdfb32001628f9b03e72bae9c5874a9b5e22a%40group.calendar.google.com&ctz=America%2FDenver"
+                        style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div><!-- end .select-date-time -->
 
-                    <div class="password-label">
-                        <label for="password">Password</label>
-                        <a href="#" class="link">Forgot Password?</a>
-                    </div><!-- end .password-label -->
+                <div class="appointment-details">
+                    <p class="hr-heading">Appointment Details</p>
+                    <hr>
 
-                    <input type="password" name="password" placeholder="*************">
-                    <a href="#" class="button">Login</a>
-                </form>
-                <p class="signup-link">If you don't have an account <a href="signup.html" class="link2"> sign up</a>
-                </p>
-            </div><!-- end .user-login-container -->
+                    <div class="product-info-and-button">
+                        <div class="product-info">
+                            <p>Basic Wash</p>
+                            <p>$30</p>
+                        </div><!-- end .product-info -->
+                        <a href="services-next-basic.html" class="button">Next</a>
+                    </div><!-- end .product-info-and-button -->
+                </div><!-- end .appointment-details -->
+            </div><!-- end .scheduling-container -->
+
         </div><!-- end .container -->
     </main>
 

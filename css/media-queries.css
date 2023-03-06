@@ -89,7 +89,7 @@
 }
 
 /* Hero Section */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     .hero-section-mobile {
         display: none;
     }
@@ -103,6 +103,14 @@
 @media screen and (min-width: 768px) {
     .modal-content {
         width: 35rem;
+    }
+
+    .form-row {
+        display: flex;
+    }
+
+    .form-row .first-name {
+        margin-right: 15px;
     }
 }
 
@@ -183,7 +191,7 @@
 }
 
 /* Services */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     .container>p {
         padding-bottom: 20px;
     }
@@ -202,7 +210,13 @@
     }
 
     .card-body {
-        height: 390px;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card-body {
+        height: 500px;
     }
 }
 
@@ -296,6 +310,22 @@
     }
 }
 
+/* Payment Success */
+@media screen and (min-width: 768px) {
+    .payment-details-row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .payment-details-container {
+        width: 70vw;
+        margin: auto;
+    }
+}
+
+
 /* Warranty */
 @media screen and (min-width: 768px) {
     .warranty-main {
@@ -387,6 +417,20 @@
 
     .user-signup-container .button {
         width: 600px;
+    }
+
+    .user-signup-container .form-row {
+        flex-direction: row;
+        width: 600px;
+    }
+
+    .user-signup-container .first-name {
+        margin-right: 15px;
+    }
+
+    .user-signup-container .first-name input,
+    .user-signup-container .last-name input {
+        width: 290px;
     }
 
 }

@@ -39,14 +39,13 @@ main {
     width: 80vw;
 }
 
-.user-login-container form input::placeholder,
-.user-signup-container form input::placeholder {
-    transition: 0.2s ease;
+.form-row {
+    display: flex;
+    flex-direction: column;
 }
 
-.user-login-container form input:focus::placeholder,
-.user-signup-container form input:focus::placeholder {
-    color: black;
+.form-row .first-name {
+    margin-bottom: 10px;
 }
 
 .password-label {
