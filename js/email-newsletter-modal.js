@@ -4,13 +4,13 @@ const closeButton = document.querySelector(".close-button");
 const subscribeButton = document.querySelector(".subscribe-button");
 
 function toggleModal() {
-    modal.classList.toggle("show-modal");
+  modal.classList.toggle("show-modal");
 }
 
 function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
+  if (event.target === modal) {
+    toggleModal();
+  }
 }
 
 // When the trigger is clicked, show modal
