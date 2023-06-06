@@ -99,6 +99,13 @@ const goToSlide = function (slide) {
   console.log(`Slide: ${slide}`);
 };
 
+// Initialization
+const init = function () {
+  activateIndicator(0);
+  goToSlide(0);
+};
+init();
+
 // Event handler
 slideIndicator.addEventListener("click", function (e) {
   if (e.target.classList.contains("indicator-btn")) {
