@@ -3,7 +3,7 @@ const productItem2 = document.querySelector(".product-item2");
 const productItem3 = document.querySelector(".product-item3");
 
 function changeButtonColor() {
-    this.classList.toggle("product-item-active");
+  this.classList.toggle("product-item-active");
 }
 
 productItem1.addEventListener("click", changeButtonColor);
