@@ -2,7 +2,7 @@
 
 <br />
 <p align="center">
-  <a href="https://sososammy.com/dog-washing-business/">
+  <a href="https://sososammy.github.io/dog-washing-business/">
     <img width="800" alt="Floofer's Dog Washing Homepage Screenshot" src="https://github.com/user-attachments/assets/de228b84-0a65-4873-8cc1-1ab0a9bf6a1e" />
   </a>
 
@@ -11,7 +11,7 @@
   <p align="center">
     A multi-page website for a fictitious dog washing company.
     <br />
-    <a href="https://sososammy.com/dog-washing-business/index.html"><strong>View Demo »</strong></a>
+    <a href="https://sososammy.github.io/dog-washing-business/index.html"><strong>View Demo »</strong></a>
   </p>
 </p>
 
@@ -25,7 +25,7 @@ This project was for a Future Business Leaders of America Website Design competi
 * Contact form with Google map
 * Google calendar with available appointments
 
-### Technologies Used
+### Built With
 
 [![HTML5][HTML5-shield]][HTML5-url]
 [![CSS][CSS-shield]][CSS-url]
